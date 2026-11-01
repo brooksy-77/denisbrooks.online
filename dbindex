@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Brooks - Resume & Professional Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcdn.tailwindcss.com%2F&data=05%7C02%7C%7Cb49ae1addf2044e8585308df379d25ca%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639290820216725470%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=VsKx2r3TAQpI7GXU%2Fg%2FNBDumO5x8WLCzikIITeUOr20%3D&reserved=0"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#035485',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffonts.googleapis.com%2F&data=05%7C02%7C%7Cb49ae1addf2044e8585308df379d25ca%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639290820216873201%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=8cC0JtOOMvuh7AnwOiLG1MVXkpMNB16EiBi4ujlng7c%3D&reserved=0">
+    <link rel="preconnect" href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffonts.gstatic.com%2F&data=05%7C02%7C%7Cb49ae1addf2044e8585308df379d25ca%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639290820216897963%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=ipwfWU8ftASH927XmOdwLl7kJlYiPuA0LwpHxP1dDeo%3D&reserved=0" crossorigin>
+    <link href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffonts.googleapis.com%2Fcss2%3Ffamily%3DInter%3Awght%40300%3B400%3B500%3B600%3B700%26display%3Dswap&data=05%7C02%7C%7Cb49ae1addf2044e8585308df379d25ca%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639290820216921315%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=dnJaGY3fd5xOZE74Xl%2BY5fskiQWvXLbtCpZnQBV2Sek%3D&reserved=0" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcdnjs.cloudflare.com%2Fajax%2Flibs%2Ffont-awesome%2F6.4.0%2Fcss%2Fall.min.css&data=05%7C02%7C%7Cb49ae1addf2044e8585308df379d25ca%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639290820216944594%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2FsdafHIEkt7oLRblJCJ28x7tbq6dOH%2FbNhLTbyP8dIw%3D&reserved=0">
+   
+    <style>
+        /* Custom print styling */
+        @media print {
+            .no-print { display: none !important; }
+            body { background: #fff !important; color: #000 !important; }
+            .print-shadow-none { box-shadow: none !important; border: 1px solid #e5e7eb !important; }
+            .page-break-inside-avoid { break-inside: avoid; }
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+        }
+        .dark .glass-card {
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-sans transition-colors duration-300 min-h-screen">
+
+    <!-- Top Navigation Bar / Quick Actions -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-200 dark:border-slate-800 no-print transition-all">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-2.5 flex justify-between items-center gap-2">
+            <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
+                <span class="text-xs sm:text-sm font-semibold tracking-wider uppercase text-slate-600 dark:text-slate-300">Available for Opportunities</span>
+            </div>
+           
+            <div class="flex items-center gap-2">
+                <!-- Dark Mode Toggle (Min 44px touch target) -->
+                <button id="themeToggle" aria-label="Toggle dark mode" class="w-11 h-11 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-brand-500 dark:hover:text-brand-500 transition-colors">
+                    <i class="fa-solid fa-moon text-base dark:hidden"></i>
+                    <i class="fa-solid fa-sun text-base hidden dark:inline"></i>
+                </button>
+               
+                <!-- Direct Print / Save PDF -->
+                <button onclick="window.print()" class="h-11 px-3 sm:px-4 flex items-center gap-2 text-xs sm:text-sm font-medium rounded-xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">
+                    <i class="fa-solid fa-print"></i>
+                    <span class="hidden sm:inline">Print / Save PDF</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-6 sm:space-y-8">
+
+        <!-- Hero / Header Section -->
+        <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-brand-900 text-white rounded-2xl p-5 sm:p-8 lg:p-10 shadow-xl relative overflow-hidden print-shadow-none">
+            <!-- Decorative Accent -->
+            <div class="absolute -right-10 -top-10 w-40 h-40 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
+           
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 relative z-10">
+                <div class="space-y-3 max-w-2xl">
+                    <div class="inline-block px-3 py-1 bg-brand-500/20 border border-brand-500/30 rounded-full text-xs font-medium text-brand-100">
+                        IT & Cloud Support Specialist | Healthcare & Transport Professional
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">Denis Brooks</h1>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Versatile professional with extensive expertise spanning Cloud/IT support, Healthcare assistance, and Fleet Logistics. Proven adaptability, high customer care standards, and robust technical acumen.
+                    </p>
+                </div>
+
+                <!-- Contact Info Badge Grid -->
+                <div class="w-full lg:w-auto bg-white/10 dark:bg-slate-800/60 backdrop-blur-md p-4 rounded-xl border border-white/10 space-y-3 text-xs sm:text-sm">
+                    <a href="tel:07748809344" class="flex items-center gap-3 text-slate-200 hover:text-white transition-colors min-h-[44px] sm:min-h-0">
+                        <span class="w-8 h-8 rounded-lg bg-brand-500/20 flex items-center justify-center text-brand-400">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <span class="font-medium">07748 809344</span>
+                    </a>
+                    <a href="mailto:Brooks.Denis@hotmail.com" class="flex items-center gap-3 text-slate-200 hover:text-white transition-colors min-h-[44px] sm:min-h-0">
+                        <span class="w-8 h-8 rounded-lg bg-brand-500/20 flex items-center justify-center text-brand-400">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <span class="font-medium break-all">Brooks.Denis@hotmail.com</span>
+                    </a>
+                    <div class="flex items-center gap-3 text-slate-200 min-h-[44px] sm:min-h-0">
+                        <span class="w-8 h-8 rounded-lg bg-brand-500/20 flex items-center justify-center text-brand-400">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <span>111a Foxhole Road, Paignton, TQ3 3SU</span>
+                    </div>
+                    
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary & Key Skills Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+           
+            <!-- About Me Summary (2 cols) -->
+            <section class="lg:col-span-2 bg-white dark:bg-slate-800 rounded-xl p-5 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-700/60 print-shadow-none">
+                <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-user-check text-brand-500"></i>
+                    About Me
+                </h2>
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-3">
+                    Throughout my career, I have successfully operated across three core domains: <strong>Transport & Fleet Logistics</strong>, <strong>Motor Trade & Aftersales Management</strong>, and <strong>Healthcare Support</strong>.
+                </p>
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                    Continuously expanding my capabilities, I have completed industry-standard credentials in IT Support and AWS Cloud Architecture. Currently actively preparing for the <strong>AWS Certified Security - Specialty (SCS-C03)</strong> examination, bringing strong technical knowledge, crisis response skills, and dependable service to every team I join.
+                </p>
+            </section>
+
+            <!-- Technical & Professional Skills (1 col) -->
+            <section class="bg-white dark:bg-slate-800 rounded-xl p-5 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-700/60 print-shadow-none">
+                <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-gears text-brand-500"></i>
+                    Core Skills
+                </h2>
+               
+                <div class="space-y-4 text-xs sm:text-sm">
+                    <div>
+                        <span class="font-semibold text-slate-800 dark:text-slate-200 uppercase tracking-wider block mb-1.5 text-xs">Cloud & IT Infrastructure</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-brand-50 dark:bg-brand-900/30 text-brand-700 dark:text-brand-300 rounded-md border border-brand-200 dark:border-brand-800/40">AWS Cloud Support</span>
+                            <span class="px-2.5 py-1 bg-brand-50 dark:bg-brand-900/30 text-brand-700 dark:text-brand-300 rounded-md border border-brand-200 dark:border-brand-800/40">Microsoft IT Support</span>
+                            <span class="px-2.5 py-1 bg-brand-50 dark:bg-brand-900/30 text-brand-700 dark:text-brand-300 rounded-md border border-brand-200 dark:border-brand-800/40">Networking & Security</span>
+                            <span class="px-2.5 py-1 bg-brand-50 dark:bg-brand-900/30 text-brand-700 dark:text-brand-300 rounded-md border border-brand-200 dark:border-brand-800/40">System Troubleshooting</span>
+                        </div>
+                    </div>
+                   
+                    <div>
+                        <span class="font-semibold text-slate-800 dark:text-slate-200 uppercase tracking-wider block mb-1.5 text-xs">Operational & Client Care</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-md">Customer Service Excellence</span>
+                            <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-md">Physical Observations & Care</span>
+                            <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-md">Medication Administration</span>
+                            <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-md">Logistics & Route Planning</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Education & Certifications Highlight -->
+        <section class="bg-white dark:bg-slate-800 rounded-xl p-5 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-700/60 print-shadow-none">
+            <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap text-brand-500"></i>
+                Education & Industry Certifications
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Certifications -->
+                <div class="space-y-3">
+                    <h3 class="text-xs font-semibold text-slate-400 dark:text-slate-400 uppercase tracking-wider">IT & Security Accreditations</h3>
+                   
+                    <div class="p-3.5 rounded-lg bg-slate-50 dark:bg-slate-700/40 border border-slate-100 dark:border-slate-700 flex items-start gap-3">
+                        <div class="p-2 rounded bg-amber-500/10 text-amber-500 font-bold text-xs mt-0.5 shrink-0">
+                            <i class="fa-solid fa-spinner animate-spin"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-slate-800 dark:text-slate-100">AWS Certified Security - Specialty (SCS-C03)</div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400">Coursera / AWS Preparation — In Progress</div>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 rounded-lg bg-slate-50 dark:bg-slate-700/40 border border-slate-100 dark:border-slate-700 flex items-start gap-3">
+                        <div class="p-2 rounded bg-brand-500/10 text-brand-500 font-bold text-xs mt-0.5 shrink-0">2026</div>
+                        <div>
+                            <div class="text-sm font-semibold text-slate-800 dark:text-slate-100">Fortinet Network Security</div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400">Coursera Professional Credential</div>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 rounded-lg bg-slate-50 dark:bg-slate-700/40 border border-slate-100 dark:border-slate-700 flex items-start gap-3">
+                        <div class="p-2 rounded bg-brand-500/10 text-brand-500 font-bold text-xs mt-0.5 shrink-0">2026</div>
+                        <div>
+                            <div class="text-sm font-semibold text-slate-800 dark:text-slate-100">Microsoft Foundations of Cybersecurity, Networking & Cloud</div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400">Coursera Specialization</div>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 rounded-lg bg-slate-50 dark:bg-slate-700/40 border border-slate-100 dark:border-slate-700 flex items-start gap-3">
+                        <div class="p-2 rounded bg-brand-500/10 text-brand-500 font-bold text-xs mt-0.5 shrink-0">2025</div>
+                        <div>
+                            <div class="text-sm font-semibold text-slate-800 dark:text-slate-100">AWS Cloud Support Associate</div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400">Coursera Professional Credential</div>
+                        </div>
+                    </div>
+
+                    <div class="p-3.5 rounded-lg bg-slate-50 dark:bg-slate-700/40 border border-slate-100 dark:border-slate-700 flex items-start gap-3">
+                        <div class="p-2 rounded bg-brand-500/10 text-brand-500 font-bold text-xs mt-0.5 shrink-0">2025</div>
+                        <div>
+                            <div class="text-sm font-semibold text-slate-800 dark:text-slate-100">Microsoft IT Support Specialist</div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400">Coursera Professional Credential</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Background -->
+                <div class="space-y-3">
+                    <h3 class="text-xs font-semibold text-slate-400 dark:text-slate-400 uppercase tracking-wider">Vocational & Formal Education</h3>
+                   
+                    <div class="p-3.5 rounded-lg bg-slate-50 dark:bg-slate-700/40 border border-slate-100 dark:border-slate-700">
+                        <div class="flex justify-between items-center mb-1 gap-2">
+                            <span class="text-sm font-semibold text-slate-800 dark:text-slate-100">BTEC First Diploma in Motor Vehicle</span>
+                            <span class="text-xs font-medium text-slate-500 dark:text-slate-400 shrink-0">1993 – 1994</span>
+                        </div>
+                        <div class="text-xs text-brand-600 dark:text-brand-400 font-medium">South Devon College — Grade: Pass</div>
+                    </div>
+
+                    <div class="p-3.5 rounded-lg bg-slate-50 dark:bg-slate-700/40 border border-slate-100 dark:border-slate-700">
+                        <div class="flex justify-between items-center mb-1 gap-2">
+                            <span class="text-sm font-semibold text-slate-800 dark:text-slate-100">G.C.S.E. Qualifications</span>
+                            <span class="text-xs font-medium text-slate-500 dark:text-slate-400 shrink-0">1988 – 1993</span>
+                        </div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400">Audley Park School</div>
+                        <div class="mt-2.5 flex flex-wrap gap-1.5 text-[11px]">
+                            <span class="px-2 py-0.5 bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded">Science (C)</span>
+                            <span class="px-2 py-0.5 bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded">Maths (C)</span>
+                            <span class="px-2 py-0.5 bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded">Tech Drawing (C)</span>
+                            <span class="px-2 py-0.5 bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded">Drama (D)</span>
+                            <span class="px-2 py-0.5 bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded">English (D)</span>
+                            <span class="px-2 py-0.5 bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded">French (E)</span>
+                            <span class="px-2 py-0.5 bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded">History (E)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section with Filter Controls -->
+        <section class="bg-white dark:bg-slate-800 rounded-xl p-5 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-700/60 print-shadow-none">
+           
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                <div>
+                    <h2 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase text-brand-500"></i>
+                        Work Experience
+                    </h2>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Chronological career history across healthcare, IT, and logistics</p>
+                </div>
+
+                <!-- Touch-friendly Category Filter Buttons (Minimum 44px tap area, wrapped cleanly) -->
+                <div class="flex flex-wrap gap-1.5 bg-slate-100 dark:bg-slate-700/60 p-1.5 rounded-xl text-xs sm:text-sm font-medium no-print w-full sm:w-auto">
+                    <button onclick="filterExperience('all', event)" class="filter-btn active min-h-[44px] px-3.5 py-2 rounded-lg bg-white dark:bg-slate-800 shadow-sm text-slate-900 dark:text-white font-semibold transition-all flex-1 sm:flex-initial text-center">All</button>
+                    <button onclick="filterExperience('health', event)" class="filter-btn min-h-[44px] px-3.5 py-2 rounded-lg text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all flex-1 sm:flex-initial text-center">Healthcare</button>
+                    <button onclick="filterExperience('motor', event)" class="filter-btn min-h-[44px] px-3.5 py-2 rounded-lg text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all flex-1 sm:flex-initial text-center">Motor Trade</button>
+                    <button onclick="filterExperience('transport', event)" class="filter-btn min-h-[44px] px-3.5 py-2 rounded-lg text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-all flex-1 sm:flex-initial text-center">Transport</button>
+                </div>
+            </div>
+
+            <!-- Experience Timeline -->
+            <div class="space-y-6 sm:space-y-8 relative before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-slate-200 dark:before:bg-slate-700">
+               
+                <!-- Item: Partservice Exeter -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="motor">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-brand-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Parts Advisor</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-semibold w-fit">09/2026 – Present</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Partservice, Exeter</div>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+                        <li>Sourcing automotive parts and handling customer and trade inquiries efficiently.</li>
+                        <li>Overseeing inventory management, stock intake, and technical part identification.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 1: Sheffield Health -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="health">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Support Worker</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium w-fit">09/2022 – 09/2026</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Sheffield Health and Social Care Trust</div>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+                        <li>Delivering 1-on-1 support for service users, including comprehensive personal care.</li>
+                        <li>Performing and recording physical observations accurately.</li>
+                        <li>Resolving everyday computer and TV/technological issues for service users and wards.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 2: Mental Health HCA -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="health">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Mental Health Healthcare Assistant (HCA)</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium w-fit">02/2022 – 09/2022</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Your World Recruitment</div>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+                        <li>Provided 1-on-1 specialized support in acute psychiatric wards and Intensive Care Units (PICU).</li>
+                        <li>Maintained physical observations and assisted with personal care routines under strict safety protocols.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 3: Senior Support Worker -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="health">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Senior Support Worker</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium w-fit">07/2020 – 02/2022</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Georgian House, Torquay</div>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+                        <li>Managed medication administration and conducted regular staff supervisions.</li>
+                        <li>Updated detailed care plans and organized daily operational staff rotas.</li>
+                        <li>Ensured high standards of personal care across shift shifts.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 4: Snows Toyota -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="motor">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-brand-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Parts Advisor</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium w-fit">09/2019 – 07/2020</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Snows Toyota, Paignton</div>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+                        <li>Handled customer enquiries and phone requests efficiently.</li>
+                        <li>Managed inventory levels, conducting regular stock checks and audits.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 5: Wessex GS -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="motor">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-brand-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Parts Advisor</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium w-fit">07/2017 – 09/2019</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Wessex GS, Newton Abbot</div>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+                        <li>Processed part orders and managed high-volume phone queries in a call center setting.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 6: Courier Driver -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="transport">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-purple-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Courier / Parcel Delivery Driver</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium w-fit">12/2016 – 07/2017</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Self Employed</div>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+                        <li>Executed parcel deliveries utilizing handheld scanning devices to log deliveries and optimize routes.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 7: Bus Driver Stagecoach -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="transport">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-purple-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Bus Driver</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium w-fit">02/2015 – 12/2016 & 04/2007 – 08/2010</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Stagecoach SW, Paignton</div>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+                        <li>Customer care, fare collection, and conducting mandatory first-user safety checks.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 8: Country Bus -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="transport">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-purple-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Bus Driver</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium w-fit">08/2014 – 02/2015 & 12/2012 – 04/2013</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Country Bus, Newton Abbot</div>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+                        <li>Customer service, passenger transport, and cash handling.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 9: Stagecoach Exeter -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="transport">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-purple-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Bus Driver</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium w-fit">04/2013 – 08/2014</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Stagecoach SW, Exeter</div>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+                        <li>Public transportation service delivery and vehicle safety inspections.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 10: Open Top Sightseeing -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="transport">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-purple-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Open Top Sightseeing Bus Driver</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium w-fit">07/2012 – 12/2012</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Self Employed</div>
+                </div>
+
+                <!-- Item 11: Eden Vauxhall -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="motor">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-brand-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Service Advisor</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium w-fit">03/2012 – 07/2012</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Eden Vauxhall, Exeter</div>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+                        <li>Upselling service packages, invoicing, customer service, and phone triage.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 12: Mann Egerton -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="motor">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-brand-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Warranty Administrator</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium w-fit">11/2011 – 03/2012</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Mann Egerton, Exeter</div>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+                        <li>Inputting and processing warranty claims and safety recalls.</li>
+                    </ul>
+                </div>
+
+                <!-- Item 13: Alan Kerr Leisure -->
+                <div class="exp-item page-break-inside-avoid relative pl-8" data-category="motor">
+                    <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-brand-500 border-4 border-white dark:border-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Aftersales Manager</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium w-fit">08/2010 – 11/2011</span>
+                    </div>
+                    <div class="text-xs sm:text-sm font-semibold text-brand-600 dark:text-brand-400 mb-2">Alan Kerr Leisure, Paignton</div>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-1">
+                        <li>Overseeing service, parts, and warranty departments; resolving customer complaints.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- References Section -->
+        <section class="bg-white dark:bg-slate-800 rounded-xl p-5 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-700/60 text-center print-shadow-none">
+            <h2 class="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">References</h2>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">Available on request</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 px-4 text-xs text-slate-400 dark:text-slate-600 no-print">
+        <p>&copy; 2026 Denis Brooks. All rights reserved.</p>
+       
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('themeToggle');
+       
+        // System preference default check
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+
+        // Experience Category Filter function
+        function filterExperience(category, event) {
+            const items = document.querySelectorAll('.exp-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-white', 'dark:bg-slate-800', 'shadow-sm', 'text-slate-900', 'dark:text-white', 'font-semibold');
+                btn.classList.add('text-slate-600', 'dark:text-slate-300');
+            });
+
+            if (event && event.currentTarget) {
+                const target = event.currentTarget;
+                target.classList.add('bg-white', 'dark:bg-slate-800', 'shadow-sm', 'text-slate-900', 'dark:text-white', 'font-semibold');
+                target.classList.remove('text-slate-600', 'dark:text-slate-300');
+            }
+
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
